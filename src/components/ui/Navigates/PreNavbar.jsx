@@ -33,19 +33,19 @@ const PreNavbar = () => {
         <div className="flexRowCenter p-3 gap-3">
           <Link
             to="/"
-            className="py-1 px-4 rounded-2xl border-2 transition-transform hover:scale-105"
+            className="py-1 px-4 rounded-2xl border-2 transition-transform hover:scale-105 hover:bg-sky-500 hover:border-none"
           >
             Upgrade
           </Link>
           <Menu>
             <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-              <BsFillPersonFill className="text-2xl" />
+              <BsFillPersonFill className="text-2xl text-blue-400" />
             </MenuButton>
             <MenuList>
               <MenuItem><Link to="/Account">Account</Link></MenuItem>
-              <MenuItem><Link>Profile</Link></MenuItem>
-              <MenuItem><Link>Upgrade To Premium</Link></MenuItem>
-              <MenuItem><Link>Settings</Link></MenuItem>
+              <MenuItem><Link to="/Profile" >Profile</Link></MenuItem>
+              <MenuItem><Link to="/Pricing" >Upgrade To Premium</Link></MenuItem>
+              <MenuItem><Link to="/Settings" >Settings</Link></MenuItem>
             </MenuList>
           </Menu>
         </div>

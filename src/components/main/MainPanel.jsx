@@ -7,8 +7,10 @@ const MainPanel = () => {
     <>
       <div className="flex">
         <Navigation />
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full bg-gradient-to-b from-sky-300 to-blue-500">
           <PreNavbar />
+          <div>
+          </div>
         </div>
       </div>
     </>
